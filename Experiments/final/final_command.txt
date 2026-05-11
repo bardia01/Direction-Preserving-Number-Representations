@@ -1,0 +1,47 @@
+Repository root: /mnt/data/bm1220/number_format_sphere_project
+
+CLI args:
+--dimension 4 8 16 32 64 --seed 51 --optimizer-targets-per-stage 38400 153600 --datatypes optimized_4 int4 fp4_e2m1 fp4_e1m2 fp4_e3m0 --optimizer-de-iter 100 --optimizer-pm-iter 1000 --optimizer-init-mode custom --output-dir final/ --query-vectors 1000000 --metric-device cuda:1 --optimizer-device cuda:0
+
+Re-run command:
+cd /mnt/data/bm1220/number_format_sphere_project
+/home/bm1220/.conda/envs/sphere/bin/python -m src.runner --dimension 4 8 16 32 64 --seed 51 --optimizer-targets-per-stage 38400 153600 --datatypes optimized_4 int4 fp4_e2m1 fp4_e1m2 fp4_e3m0 --optimizer-de-iter 100 --optimizer-pm-iter 1000 --optimizer-init-mode custom --output-dir final/ --query-vectors 1000000 --metric-device cuda:1 --optimizer-device cuda:0
+
+Parsed args:
+{
+  "all": false,
+  "datatypes": [
+    "optimized_4",
+    "int4",
+    "fp4_e2m1",
+    "fp4_e1m2",
+    "fp4_e3m0"
+  ],
+  "dimensions": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "metric_device": "cuda:1",
+  "num_seeds": null,
+  "optimizer_batch_size": 2048,
+  "optimizer_de_iter": 100,
+  "optimizer_device": "cuda:0",
+  "optimizer_init_mode": "custom",
+  "optimizer_pm_iter": 1000,
+  "optimizer_targets_per_stage": [
+    38400,
+    153600
+  ],
+  "output_dir": "final",
+  "parallel_workers": 1,
+  "query_chunk_size": 4096,
+  "query_vectors": 1000000,
+  "seed": 51,
+  "seeds": [
+    51
+  ],
+  "standard_form_output": true
+}

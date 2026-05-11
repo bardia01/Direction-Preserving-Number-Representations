@@ -1,0 +1,4 @@
+.venv/
+*pycache*
+*DS_Store*
+results/final/max_scaled_scalar_quant_direction_error_deg_ieeetran_table.tex
